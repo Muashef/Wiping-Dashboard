@@ -6,6 +6,7 @@ import Home from './pages/Home/Home'
 import Matches from './pages/Matches/Matches'
 import CustomerManagement from './pages/CustomerMgt/CustomerManagement'
 import Reports from './pages/Reports/Reports'
+import Subscription from './pages/Subscription/Subscription'
 
 function App() {
   
@@ -19,6 +20,7 @@ function App() {
           <Route path='/matches' element={<Matches />} />
           <Route path='/customer-mgt' element={<CustomerManagement />} />
           <Route path='/reports' element={<Reports />} />
+          <Route path='/subscription' element={<Subscription />} />
         </Routes>
       </BrowserRouter>
     </>

@@ -6,21 +6,21 @@ const ReportData = () => {
   const data = React.useMemo(
     () => [
       {
-        id: 1,
+        id: 2,
         email: "Davidadeleke007@gmail.com",
         reason: "Fake profile",
         country: "Germany",
         status: "Active",
       },
       {
-        id: 2,
+        id: 1,
         email: "Davidadeleke007@gmail.com",
         reason: "Scam",
         country: "Italy",
         status: "Deactivated",
       },
       {
-        id: 3,
+        id: 7,
         email: "Davidadeleke007@gmail.com",
         reason: "Not interested",
         country: "Nigeria",
@@ -34,34 +34,6 @@ const ReportData = () => {
         status: "Suspended",
       },
       {
-        id: 5,
-        email: "Davidadeleke007@gmail.com",
-        reason: "Not interested",
-        country: "Nigeria",
-        status: "Suspended",
-      },
-      {
-        id: 6,
-        email: "Davidadeleke007@gmail.com",
-        reason: "Not interested",
-        country: "Nigeria",
-        status: "Suspended",
-      },
-      {
-        id: 7,
-        email: "Davidadeleke007@gmail.com",
-        reason: "Fake profile",
-        country: "Germany",
-        status: "Active",
-      },
-      {
-        id: 8,
-        email: "Davidadeleke007@gmail.com",
-        reason: "Not interested",
-        country: "Nigeria",
-        status: "Suspended",
-      },
-      {
         id: 9,
         email: "Davidadeleke007@gmail.com",
         reason: "Not interested",
@@ -69,7 +41,35 @@ const ReportData = () => {
         status: "Suspended",
       },
       {
-        id: 10,
+        id: 2,
+        email: "Davidadeleke007@gmail.com",
+        reason: "Not interested",
+        country: "Nigeria",
+        status: "Suspended",
+      },
+      {
+        id: 8,
+        email: "Davidadeleke007@gmail.com",
+        reason: "Fake profile",
+        country: "Germany",
+        status: "Active",
+      },
+      {
+        id: 5,
+        email: "Davidadeleke007@gmail.com",
+        reason: "Not interested",
+        country: "Nigeria",
+        status: "Suspended",
+      },
+      {
+        id: 1,
+        email: "Davidadeleke007@gmail.com",
+        reason: "Not interested",
+        country: "Nigeria",
+        status: "Suspended",
+      },
+      {
+        id: 2,
         email: "Davidadeleke007@gmail.com",
         reason: "Not interested",
         country: "Nigeria",
@@ -77,7 +77,7 @@ const ReportData = () => {
       },
      
       {
-        id: 11,
+        id: 6,
         email: "Davidadeleke007@gmail.com",
         reason: "Not interested",
         country: "Nigeria",
@@ -96,17 +96,20 @@ const ReportData = () => {
         Header: "Email",
         accessor: "email",
         Cell: ({ row }) => (
-            <div
-              className={`flex px-6 py-0 whitespace-nowrap ${
-                row.original.id === 2 ||
-                row.original.id === 1 ||
-                row.original.id === 5
-                  ? "bg-blue-100"
-                  : "bg-red-100"
-              }`}
-            >
-              <span className="mr-16">{row.original.email}</span>
-              <span >{row.original.id}</span>
+            <div className=" whitespace-nowrap flex items-center">
+                 <span className="mr-24">{row.original.email}</span>
+                <div
+                    className={`flex items-center ${
+                    row.original.id === 2 ||
+                    row.original.id === 1 ||
+                    row.original.id === 5
+                        ? "bg-[#2F80ED] py-1 px-2 text-white rounded-full"
+                        : "bg-[#E23A45] py-1 px-2 text-white rounded-full"
+                    }`}
+                >
+                    <span >{row.original.id}</span>
+                </div>
+               
             </div>
           ),
       },

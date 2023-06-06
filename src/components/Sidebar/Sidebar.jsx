@@ -37,7 +37,7 @@ const Sidebar = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link to='#' className="w-fit flex items-center gap-2 bg-transparent">
+                                <Link to='/subscription' className="w-fit flex items-center gap-2 bg-transparent">
                                     <img src={subs} alt="" className="w-[1.125rem] mr-1" />
                                     <span className="text-[0.875rem] leading-[120%]">Subscription</span>
                                 </Link>
