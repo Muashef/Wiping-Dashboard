@@ -56,7 +56,7 @@ const Sidebar = () => {
                             </li>
 
                             <li>
-                                <Link to='#' className="w-fit flex items-center gap-2 bg-transparent">
+                                <Link to='/online' className="w-fit flex items-center gap-2 bg-transparent">
                                     <img src={Online} alt="" className="w-[1.125rem] mr-1" />
                                     <span className="text-[0.875rem] leading-[120%]">Online</span>
                                 </Link>
