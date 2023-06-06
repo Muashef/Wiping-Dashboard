@@ -1,16 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Home from '../../assets/svg/home.svg';
 import Matches from '../../assets/svg/Matches.svg';
 import Mgt from '../../assets/svg/mgt.svg';
 import Online from '../../assets/svg/online.svg';
 import Report from '../../assets/svg/reports.svg';
 import settings from '../../assets/svg/setting.svg'
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import subs from '../../assets/svg/subs.svg';
 import user from '../../assets/svg/user.svg';
 import logout from '../../assets/svg/Logout.svg';
+import LogoutModal from '../Modal/LogoutModal';
 
 const Sidebar = () => {
+    const [isLoggedIn, setIsLoggedIn] = useState(true);
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    // const [redirectToLogin, setRedirectToLogin] = useState(false);
+  
+    const handleLogout = () => {
+      setIsLoggedIn(false);
+      setIsModalOpen(false);
+      // Redirect to the login page or perform any necessary logout logic here
+    //   setRedirectToLogin(true);
+    };
+
+    // if (redirectToLogin) {
+    //     return <Redirect to="/home" />;
+    //   }
     
 
   return (
@@ -68,16 +83,21 @@ const Sidebar = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link to='#' className="w-fit flex items-center gap-2 bg-transparent">
+                                <Link to='/settings' className="w-fit flex items-center gap-2 bg-transparent">
                                     <img src={settings} alt="" className="w-[1.125rem] mr-1" />
                                     <span className="text-[0.875rem] leading-[120%]">Settings</span>
                                 </Link>
                             </li>
                             <li>
-                                <Link to='#' className="w-fit flex items-center gap-2 bg-transparent">
+                                <div className="w-fit flex items-center gap-2 bg-transparent">
                                     <img src={logout} alt="" className="w-[1.125rem] mr-1" />
-                                    <span className="text-[0.875rem] leading-[120%]">Logout</span>
-                                </Link>
+                                    <button onClick={() => setIsModalOpen(true)} className="text-[0.875rem] leading-[120%]">Logout</button>
+                                    <LogoutModal
+                                        isOpen={isModalOpen}
+                                        onClose={() => setIsModalOpen(false)}
+                                        onLogout={handleLogout}
+                                    />
+                                </div>
                             </li>
                         </ul>
                     </nav>

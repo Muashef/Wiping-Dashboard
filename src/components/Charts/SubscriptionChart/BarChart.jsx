@@ -53,8 +53,9 @@ const BarChart = () => {
     },
     plugins: {
       legend: {
-        position: 'top',
-        align: 'end',
+        display: false,
+        // position: 'top',
+        // align: 'end',
       },
     },
   };

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Line } from 'react-chartjs-2';
 
 const AreaChart = () => {
-  const [timePeriod, setTimePeriod] = useState('daily');
+  const [timePeriod, setTimePeriod] = useState('monthly');
 
   const data = {
     labels: [

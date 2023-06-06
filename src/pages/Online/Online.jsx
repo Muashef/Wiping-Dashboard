@@ -7,13 +7,13 @@ import AreaChart from '../../components/Charts/OnlineChart/AreaChart';
 const Online = () => (
   <div className="">
     <div className=''>
-        <NavBar title="Onine"  />
+        <NavBar title="Online"  />
     </div>
     
-    <div className='w-full h-screen lg:overflow-hidden grid grid-cols-1 lg:grid-cols-[13rem_1fr] items-stretch'>
+    <div className='w-full h-screen grid grid-cols-1 lg:grid-cols-[13rem_1fr] items-stretch'>
         <Sidebar />
         <div className=''>
-            <div className="flex items-center px-8 space-x-4">
+            <div className="flex items-center px-8 space-x-4 mt-6">
                 <label htmlFor="date" className="font-bold text-[#232360] text-sm">Date:</label>
                 <div className="flex space-x-2">
                     <input type="number" id="year" placeholder="Day" className="px-2 py-3 border border-gray-300 rounded bg-[#F2F2F2] w-24 outline-none" />

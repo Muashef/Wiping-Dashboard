@@ -8,6 +8,7 @@ import CustomerManagement from './pages/CustomerMgt/CustomerManagement'
 import Reports from './pages/Reports/Reports'
 import Subscription from './pages/Subscription/Subscription'
 import Online from './pages/Online/Online'
+import Settings from './pages/Settings/Settings'
 
 function App() {
   
@@ -23,6 +24,7 @@ function App() {
           <Route path='/reports' element={<Reports />} />
           <Route path='/subscription' element={<Subscription />} />
           <Route path='online' element={<Online />} />
+          <Route path='/settings' element={<Settings />} />
         </Routes>
       </BrowserRouter>
     </>

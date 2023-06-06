@@ -10,7 +10,7 @@ const Reports = () => (
         <NavBar title="Reports"  />
     </div>
     
-    <div className='w-full min-h-screen lg:overflow-hidden grid grid-cols-1 lg:grid-cols-[14rem_1fr] items-stretch'>
+    <div className='w-full min-h-screen grid grid-cols-1 lg:grid-cols-[14rem_1fr] items-stretch'>
         <Sidebar />
         <div className='w-full h-screen'>
             <ReportData />
