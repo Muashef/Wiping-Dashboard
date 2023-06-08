@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Home from '../../assets/svg/home.svg';
-import Matches from '../../assets/svg/Matches.svg';
+import Matches from '../../assets/svg/matches.svg';
 import Mgt from '../../assets/svg/mgt.svg';
 import Online from '../../assets/svg/online.svg';
 import Report from '../../assets/svg/reports.svg';
