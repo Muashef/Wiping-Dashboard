@@ -8,7 +8,7 @@ import settings from '../../assets/svg/setting.svg'
 import { Link, useLocation } from 'react-router-dom';
 import subs from '../../assets/svg/subs.svg';
 import user from '../../assets/svg/user.svg';
-import logout from '../../assets/svg/Logout.svg';
+import logout from '../../assets/svg/logout.svg';
 import LogoutModal from '../Modal/LogoutModal';
 
 const Sidebar = () => {
