@@ -1,0 +1,51 @@
+/* .users{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 8.875rem 10.5rem 18rem 10.625rem;
+    grid-template-areas: 
+    'gender total'
+    'gender active'
+    'female active'
+    'female inactive'
+    'male inactive'
+    'male ages';
+  } */
+  
+  /* .gender{
+    grid-area: balance;
+  }
+  
+  .total{
+    grid-area: withdraw;
+  }
+  
+  .active{
+    grid-area: payment;
+  }
+  
+  .female{
+    grid-area: transaction;
+  }
+  
+  .male{
+    grid-area: graph;
+  }
+  
+  .ages{
+    grid-area: overview;
+  } */
+  
+  
+@media only screen and (max-width: 768px) {
+  .dash{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+    'balance'
+    'withdraw'
+    'payment'
+    'transaction'
+    'graph' 
+    'overview';
+  }
+}
