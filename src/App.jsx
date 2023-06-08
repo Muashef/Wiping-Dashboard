@@ -9,6 +9,7 @@ import Reports from './pages/Reports/Reports'
 import Subscription from './pages/Subscription/Subscription'
 import Online from './pages/Online/Online'
 import Settings from './pages/Settings/Settings'
+import UserAnalytics from './pages/UserAnalytics/UserAnalytics'
 
 function App() {
   
@@ -25,6 +26,7 @@ function App() {
           <Route path='/subscription' element={<Subscription />} />
           <Route path='online' element={<Online />} />
           <Route path='/settings' element={<Settings />} />
+          <Route path='/user-analytics' element={<UserAnalytics />} />
         </Routes>
       </BrowserRouter>
     </>

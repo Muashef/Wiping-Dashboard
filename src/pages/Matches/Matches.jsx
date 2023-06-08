@@ -14,7 +14,22 @@ const Matches = () => (
         <Sidebar />
         <div className='w-full h-[25.125rem] mx-auto px-56 gap-14 mt-24 grid grid-cols-1 lg:grid-cols-2 items-center justify-center'>
             <div className=' bg-white p-6 shadow-md rounded-md w-[21.60625rem]'>
-                <h1 className='text-[#232360] font-bold border-b-2 w-1/3 h-7'>Accepted</h1>
+                <h1 className='text-[#232360] font-bold text-xl'>Accepted</h1>
+                <div className='border-b-2 w-32 h-2'></div>
+                <div className='flex items-center justify-between mt-4'>
+                    <div>
+                    <p className='text-[#9E9E9E] text-sm'>Everyday</p>
+                    <p className='text-[#2F80ED] font-bold'>4,000</p>
+                    </div>
+                    <div>
+                        <img src={ Profile } alt="profile" />
+                    </div>
+                </div>
+                
+            </div>
+            <div className=' bg-white p-6 shadow-md rounded-md w-[21.60625rem]'>
+                <h1 className='text-[#232360] font-bold text-xl'>Rejected</h1>
+                <div className='border-b-2 w-32 h-2'></div>
                 <div className='flex justify-between mt-4'>
                     <div>
                     <p className='text-[#9E9E9E] text-sm'>Everyday</p>
@@ -28,8 +43,9 @@ const Matches = () => (
             </div>
 
             <div className=' bg-white p-6 shadow-md rounded-md w-[21.60625rem]'>
-                <h1 className='text-[#232360] font-bold border-b-2 w-1/3 h-7'>Rejected</h1>
-                <div className='flex justify-between mt-4'>
+                <h1 className='text-[#232360] font-bold text-xl'>Pending</h1>
+                <div className='border-b-2 w-32 h-2'></div>
+                <div className='flex items-center justify-between mt-4'>
                     <div>
                     <p className='text-[#9E9E9E] text-sm'>Everyday</p>
                     <p className='text-[#2F80ED] font-bold'>4,000</p>
@@ -42,22 +58,9 @@ const Matches = () => (
             </div>
 
             <div className=' bg-white p-6 shadow-md rounded-md w-[21.60625rem]'>
-                <h1 className='text-[#232360] font-bold border-b-2 w-1/3 h-7'>Pending</h1>
-                <div className='flex justify-between mt-4'>
-                    <div>
-                    <p className='text-[#9E9E9E] text-sm'>Everyday</p>
-                    <p className='text-[#2F80ED] font-bold'>4,000</p>
-                    </div>
-                    <div>
-                        <img src={ Profile } alt="profile" />
-                    </div>
-                </div>
-                
-            </div>
-
-            <div className=' bg-white p-6 shadow-md rounded-md w-[21.60625rem]'>
-                <h1 className='text-[#232360] font-bold border-b-2 w-1/3 h-7'>Rejected</h1>
-                <div className='flex justify-between mt-4'>
+                <h1 className='text-[#232360] font-bold text-xl'>Rejected</h1>
+                <div className='border-b-2 w-32 h-2'></div>
+                <div className='flex items-center justify-between mt-4'>
                     <div>
                     <p className='text-[#9E9E9E] text-sm'>Everyday</p>
                     <p className='text-[#2F80ED] font-bold'>4,000</p>

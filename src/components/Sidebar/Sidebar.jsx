@@ -64,7 +64,7 @@ const Sidebar = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link to='#' className="w-fit flex items-center gap-2 bg-transparent">
+                                <Link to='/user-analytics' className="w-fit flex items-center gap-2 bg-transparent">
                                     <img src={user} alt="" className="w-[1.125rem] mr-1" />
                                     <span className="text-[0.875rem] leading-[120%]">User Analytics</span>
                                 </Link>
