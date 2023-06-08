@@ -144,8 +144,6 @@ const UserAnalytics = () => (
                 </div>
                 
             </div>
-            
-            
             {/* <div className='reject bg-white p-6 shadow-md rounded-md w-[21.60625rem]'>
                 <h1 className='text-[#232360] font-bold text-xl'>Rejected</h1>
                 <div className='border-b-2 w-32 h-2'></div>
@@ -172,8 +170,7 @@ const UserAnalytics = () => (
                 </div>
                 
             </div>
-           
-            <div className='ages bg-white p-6 shadow-md rounded-md ml-40 mt-12 w-[21.60625rem]'>
+            <div className='ages bg-white p-6 shadow-md rounded-md w-[21.60625rem]'>
                 <h1 className='text-[#232360] text-xl font-bold '>Ages</h1>
                 <div className='border-b-2 w-24 h-2'></div>
                 <div className='flex items-center justify-between mt-8'>
