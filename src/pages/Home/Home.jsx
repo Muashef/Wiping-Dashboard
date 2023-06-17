@@ -5,7 +5,7 @@ import plus from '../../assets/svg/plus.svg';
 import active from '../../assets/svg/active.svg';
 import Growth from '../../assets/svg/Growth.svg';
 import premium from '../../assets/svg/premium.svg';
-import AreaChart from '../../components/Charts/OnlineChart/AreaChart';
+import IncomeChart from '../../components/Charts/IncomeChart/IncomeChart';
 import PieChart from '../../components/Charts/PieChart/PieChart';
 import SemiPieChart from '../../components/Charts/SemiPieChart/SemiPieChart';
 
@@ -17,7 +17,7 @@ const Home = () => {
         <Sidebar />
         <div className='grid grid-cols-1 lg:grid-cols-2 px-8'>
             <div className='chart border border-white p-5 mb-5 shadow-md rounded-lg w-[40.798125rem]'>
-                <AreaChart />
+                <IncomeChart />
             </div>
             <div className='user bg-white p-6 shadow-md rounded-md ml-40 mb-5 w-[21.60625rem]'>
                 <h1 className='text-[#232360] font-bold text-xl'>User Analytics</h1>
@@ -66,8 +66,8 @@ const Home = () => {
                     </div>
                     
                     <div class="h-4 w-full bg-[#F8F8FF] rounded-sm">
-                        <div class="h-4 bg-[#2F80ED] w-20 rounded-md" >
-                            <div class="h-4 bg-[#1EA7FF] w-12 rounded-md" ></div>
+                        <div class="h-4 bg-[#DEE1FF] w-20 rounded-md" >
+                            <div class="h-4 bg-[#2F80ED] w-12 rounded-md" ></div>
                         </div>
                     </div>
                     <p className='ml-3 text-[11.28px]'>3.3%</p>
@@ -75,8 +75,8 @@ const Home = () => {
                 <div className='flex items-center justify-between mb-4'>
                     <p className='whitespace-nowrap mr-3 text[11.28px]'>25-34</p>
                     <div class="h-4 w-full bg-[#F8F8FF] rounded-sm">
-                        <div class="h-4 bg-[#2F80ED] w-36 rounded-md" >
-                            <div class="h-4 bg-[#1EA7FF] w-20 rounded-md" ></div>
+                        <div class="h-4 bg-[#DEE1FF] w-36 rounded-md" >
+                            <div class="h-4 bg-[#2F80ED] w-20 rounded-md" ></div>
                         </div>
                     </div>
                     <p className='ml-3 text-[11.28px]'>12.7%</p>
@@ -84,8 +84,8 @@ const Home = () => {
                 <div className='flex items-center justify-between mb-4'>
                     <p className='whitespace-nowrap mr-3 text[11.28px]'>35-44</p>
                     <div class="h-4 w-full bg-[#F8F8FF] rounded-sm">
-                        <div class="h-4 bg-[#2F80ED] w-36 rounded-md" >
-                            <div class="h-4 bg-[#1EA7FF] w-12 rounded-md" ></div>
+                        <div class="h-4 bg-[#DEE1FF] w-36 rounded-md" >
+                            <div class="h-4 bg-[#2F80ED] w-12 rounded-md" ></div>
                         </div>
                     </div>
                     <p className='ml-3 text-[11.28px]'>15.2%</p>
@@ -93,8 +93,8 @@ const Home = () => {
                 <div className='flex items-center justify-between mb-4'>
                     <p className='whitespace-nowrap mr-3 text[11.28px]'>45-64</p>
                     <div class="h-4 w-full bg-[#F8F8FF] rounded-sm">
-                        <div class="h-4 bg-[#2F80ED] w-52 rounded-md" >
-                            <div class="h-4 bg-[#1EA7FF] w-24 rounded-md" ></div>
+                        <div class="h-4 bg-[#DEE1FF] w-52 rounded-md" >
+                            <div class="h-4 bg-[#2F80ED] w-24 rounded-md" ></div>
                         </div>
                     </div>
                     <p className='ml-3 text-[11.28px]'>25.3%</p>
@@ -102,8 +102,8 @@ const Home = () => {
                 <div className='flex items-center justify-between'>
                     <p className='whitespace-nowrap mr-4 text[11.28px] text-center'>65+</p>
                     <div class="h-4 w-full bg-[#F8F8FF] rounded-sm">
-                        <div class="h-4 bg-[#2F80ED] w-72 rounded-md" >
-                            <div class="h-4 bg-[#1EA7FF] w-40 rounded-md" ></div>
+                        <div class="h-4 bg-[#DEE1FF] w-72 rounded-md" >
+                            <div class="h-4 bg-[#2F80ED] w-40 rounded-md" ></div>
                         </div>
                     </div>
                     <p className='ml-3 text-[11.28px]'>33.5%</p>
