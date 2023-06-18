@@ -2,7 +2,12 @@ import React from 'react'
 import Sidebar from '../../components/Sidebar/Sidebar'
 import NavBar from '../../components/Header/Navbar'
 import plus from '../../assets/svg/plus.svg';
-import active from '../../assets/svg/active.svg';
+import nij1 from '../../assets/svg/nij1.svg';
+import nij2 from '../../assets/svg/nij2.svg';
+import nij3 from '../../assets/svg/nij3.svg';
+import nij4 from '../../assets/svg/nij4.svg';
+import nij5 from '../../assets/svg/nij5.svg';
+import nij6 from '../../assets/svg/nij6.svg';
 import Growth from '../../assets/svg/Growth.svg';
 import premium from '../../assets/svg/premium.svg';
 import IncomeChart from '../../components/Charts/IncomeChart/IncomeChart';
@@ -152,12 +157,68 @@ const Home = () => {
             </div>
             <div className='active bg-white p-6 shadow-md rounded-md ml-[-12rem] h-[261.07px] w-[47.3125rem] mb-5'>
                 <h1 className='text-[#232360] font-bold text-xl'>Demographics</h1>
-                <div className='flex items-center justify-between mt-10'>
-                    <div>
-                    <p className='text-[#2F80ED] font-bold'>39,000</p>
+                <div className='flex flex-col float-right space-y-4 mt-4'>
+                    <div className='flex items-center space-x-5'>
+                      <div className='flex items-center space-x-4'>
+                        <span className='flex items-center text-[#F2C94C] text-[10px]'>
+                        <img src={nij1} className='mr-2' alt="" />
+                          Nigeria
+                        </span>
+                        <p className='text-[#9E9E9E] text-[8px]'>40,000 users</p>
+                      </div>
+                      <div className='flex items-center space-x-4'>
+                        <span className='flex items-center text-[#EB5757] text-[10px]'>
+                        <img src={nij5} className='mr-2' alt="" />
+                          Nigeria
+                        </span>
+                        <p className='text-[#9E9E9E] text-[8px]'>40,000 users</p>
+                      </div>
                     </div>
-                    <div>
-                        <img src={ active } alt="active" />
+                    <div className='flex items-center space-x-5'>
+                      <div className='flex items-center space-x-4'>
+                        <span className='flex items-center text-[#219653] text-[10px]'>
+                        <img src={nij2} className='mr-2' alt="" />
+                          Nigeria
+                        </span>
+                        <p className='text-[#9E9E9E] text-[8px]'>40,000 users</p>
+                      </div>
+                      <div className='flex items-center space-x-4'>
+                        <span className='flex items-center text-[#6FCF97] text-[10px]'>
+                        <img src={nij6} className='mr-2' alt="" />
+                          Nigeria
+                        </span>
+                        <p className='text-[#9E9E9E] text-[8px]'>40,000 users</p>
+                      </div>
+                    </div>
+                    <div className='flex items-center space-x-5'>
+                      <div className='flex items-center space-x-4'>
+                        <span className='flex items-center text-[#9B51E0] text-[10px]'>
+                        <img src={nij3} className='mr-2' alt="" />
+                          Nigeria
+                        </span>
+                        <p className='text-[#9E9E9E] text-[8px]'>40,000 users</p>
+                      </div>
+                      <div className='flex items-center space-x-4'>
+                        <span className='flex items-center text-[#BB6BD9] text-[10px]'>
+                        <img src={nij6} className='mr-2' alt="" />
+                          Nigeria
+                        </span>
+                        <p className='text-[#9E9E9E] text-[8px]'>40,000 users</p>
+                      </div>
+                    </div>
+                    <div className='flex items-center space-x-5'>
+                      <div className='flex items-center space-x-4'>
+                        <span className='flex items-center text-[#56CCF2] text-[10px]'>
+                        <img src={nij4} className='mr-2' alt="" />
+                          Nigeria
+                        </span>
+                        <p className='text-[#9E9E9E] text-[8px]'>40,000 users</p>
+                      </div>
+                    </div>
+                    <div className='py-6 flex flex-col'>
+                      <h2 className='text-[#020202] font-bold text-[sm] '>Total Countries: 
+                        <span className='text-[#9E9E9E] ml-2'>7</span>
+                      </h2>
                     </div>
                 </div>
                 

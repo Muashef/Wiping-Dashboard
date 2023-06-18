@@ -11,11 +11,11 @@ function Login() {
     }
 
   return (
-    <div className="flex min-h-full items-center justify-center px-4 py-12 sm:px-6 lg:px-8">
+    <div className="flex min-h-full items-center justify-center px-4 py-12 sm:px-6 lg:px-8 dark:bg-[#4F4F4F]">
     <div class="w-full max-w-md space-y-12">
     <div className='mt-10'>
       <img class="mx-auto h-12 w-auto" src={Logo} alt="Wiping-logo" />
-      <p class="mt-10 text-center text-3xl tracking-tight text-[#212121] font-inter">Sign In</p>
+      <p class="mt-10 text-center text-3xl tracking-tight text-[#212121] font-inter dark:text-[#BDBDBD]">Sign In</p>
     </div>
     <form class="mt-10 space-y-6 relative" action="#" method="POST">
       <input type="hidden" name="remember" value="true" /> 

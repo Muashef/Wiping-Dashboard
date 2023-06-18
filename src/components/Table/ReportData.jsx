@@ -83,8 +83,34 @@ const ReportData = () => {
         country: "Nigeria",
         status: "Suspended",
       },
-     
-      
+      {
+        id: 8,
+        email: "Davidadeleke007@gmail.com",
+        reason: "Fake profile",
+        country: "Germany",
+        status: "Active",
+      },
+      {
+        id: 6,
+        email: "Davidadeleke007@gmail.com",
+        reason: "Not interested",
+        country: "Nigeria",
+        status: "Suspended",
+      },
+      {
+        id: 1,
+        email: "Davidadeleke007@gmail.com",
+        reason: "Scam",
+        country: "Italy",
+        status: "Deactivated",
+      },
+      {
+        id: 8,
+        email: "Davidadeleke007@gmail.com",
+        reason: "Fake profile",
+        country: "Germany",
+        status: "Active",
+      },
 
     ],
     []
@@ -127,7 +153,7 @@ const ReportData = () => {
         Cell: ({ value }) => (
             <span
             className={`${
-                value === 'Active' ? 'bg-[#2F80ED] text-sm py-2 px-6 rounded-md text-white' : (value === 'Deactivated' ? 'bg-[#E23A45] text-sm py-2 px-1 rounded-md text-white' : 'bg-[#B6B6B6] text-sm py-2 px-2 rounded-md text-white')
+                value === 'Active' ? 'bg-[#2F80ED] text-sm py-2 px-6 rounded-md text-white cursor-pointer' : (value === 'Deactivated' ? 'bg-[#E23A45] text-sm py-2 px-1 rounded-md text-white' : 'bg-[#B6B6B6] text-sm py-2 px-2 rounded-md text-white')
               }`}
             >
               {value}

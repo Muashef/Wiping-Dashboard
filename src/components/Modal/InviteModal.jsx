@@ -40,7 +40,7 @@ const InviteModal = () => {
             <div>
                 <h3 className='text-[#2F80ED] text-base font-bold'>Users</h3>
             </div>
-            <div>
+            <div className='pr-24'>
                 <button className='bg-[#2F80ED] text-white py-3 px-8 rounded-md text-sm uppercase' 
                 onClick={openModal}
                 >
@@ -79,6 +79,9 @@ const InviteModal = () => {
                 <option value="">Manager</option>
                 <option value="">Admin</option>
                 <option value="">Reporting</option>
+                <option value="">Reviewer</option>
+                <option value="">Super Admin</option>
+                <option value="">Customer Support</option>
               </select>
             </div>
             <div className="mb-4">

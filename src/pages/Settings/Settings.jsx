@@ -1,5 +1,4 @@
 import React from 'react';
-import Profile from '../../assets/svg/profile.svg';
 import NavBar from '../../components/Header/Navbar';
 import Sidebar from '../../components/Sidebar/Sidebar';
 import SettingsData from '../../components/Table/SettingsData';
@@ -7,9 +6,11 @@ import InviteModal from '../../components/Modal/InviteModal';
 
 
 const Settings = () => (
+    
+
   <div className="">
     <div className=''>
-        <NavBar title="Settings"  />
+        <NavBar title="Settings" showMode={true} />
     </div>
     
     <div className='w-full h-screen  grid grid-cols-1 lg:grid-cols-[13rem_1fr] items-stretch'>
@@ -29,7 +30,7 @@ const Settings = () => (
                             <h3 className='text-[#757575] text-base font-bold'>Davidadeleke007@gmail.com</h3>
                         </div>
                         <div>
-                            <button className='bg-[#828282] rounded-md mr-5 py-2 px-3 text-white'>Resend Invite</button>
+                            <button  className='bg-[#828282] rounded-md mr-5 py-2 px-3 text-white'>Resend Invite</button>
                             <button className='bg-[#EB5757] rounded-md py-2 px-3 text-white'>Revoke Invite</button>
                         </div>
                     </div>
