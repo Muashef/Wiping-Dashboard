@@ -21,11 +21,11 @@ const Home = () => {
         <div className='w-full h-screen grid grid-cols-1 lg:grid-cols-[13rem_1fr] items-stretch'>
         <Sidebar />
         <div className='grid grid-cols-1 lg:grid-cols-2 px-8'>
-            <div className='chart border border-white p-5 mb-5 shadow-md rounded-lg w-[40.798125rem]'>
+            <div className='chart mx-auto border border-white p-5 mb-5 shadow-md rounded-lg w-[20rem] md:w-[40.798125rem]'>
                 <IncomeChart />
             </div>
-            <div className='user bg-white p-6 shadow-md rounded-md ml-40 mb-5 w-[21.60625rem]'>
-                <h1 className='text-[#232360] font-bold text-xl'>User Analytics</h1>
+            <div className='user mx-auto bg-white p-6 shadow-md rounded-md lg:ml-40 mb-5 w-[20rem] md:w-[21.60625rem]'>
+                <h1 className='text-[#232360] font-bold text-sm md:text-xl'>User Analytics</h1>
                 <div className='border-b-2 w-full h-2'></div>
                 <div className='flex items-center justify-between mt-4'>
                     <div>
@@ -42,18 +42,18 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className='gender border border-[#FAFAFA] p-5 rounded-lg shadow-md mb-5 w-[40.798125rem]'>
+            <div className='gender mx-auto border border-[#FAFAFA] p-5 rounded-lg shadow-md mb-5 w-[20rem] md:w-[40.798125rem]'>
                 <div className='flex items-center justify-between'>
                     <div className='flex items-center'>
                         <div className='mr-6'>
-                            <h3 className='text-[#1E1B39] text-xl font-bold'>Age and Gender</h3>
+                            <h3 className='text-[#1E1B39] text-sm whitespace-nowrap md:text-xl font-bold'>Age and Gender</h3>
                         </div>
                         <div className='flex items-center'>
-                            <span className='flex items-center mr-3'>
+                            <span className='flex items-center mr-3 text-sm md:text-base'>
                                 <img className='mr-1' src={ plus } alt="" />
                                 Male
                             </span>
-                            <span className='flex items-center '>
+                            <span className='flex items-center text-sm md:text-base'>
                                 <img className='mr-1' src={ premium } alt="" />
                                 Female
                             </span>
@@ -98,7 +98,7 @@ const Home = () => {
                 <div className='flex items-center justify-between mb-4'>
                     <p className='whitespace-nowrap mr-3 text[11.28px]'>45-64</p>
                     <div class="h-4 w-full bg-[#F8F8FF] rounded-sm">
-                        <div class="h-4 bg-[#DEE1FF] w-52 rounded-md" >
+                        <div class="h-4 bg-[#DEE1FF] w-44 md:w-52 rounded-md" >
                             <div class="h-4 bg-[#2F80ED] w-24 rounded-md" ></div>
                         </div>
                     </div>
@@ -107,19 +107,19 @@ const Home = () => {
                 <div className='flex items-center justify-between'>
                     <p className='whitespace-nowrap mr-4 text[11.28px] text-center'>65+</p>
                     <div class="h-4 w-full bg-[#F8F8FF] rounded-sm">
-                        <div class="h-4 bg-[#DEE1FF] w-72 rounded-md" >
+                        <div class="h-4 bg-[#DEE1FF] w-48 md:w-72 rounded-md" >
                             <div class="h-4 bg-[#2F80ED] w-40 rounded-md" ></div>
                         </div>
                     </div>
                     <p className='ml-3 text-[11.28px]'>33.5%</p>
                 </div>  
             </div>
-            <div className='visitors bg-white p-6 shadow-md rounded-md ml-40 mb-5 w-[21.60625rem]'>
+            <div className='visitors mx-auto bg-white p-6 shadow-md rounded-md lg:ml-40 mb-5 w-[20rem] md:w-[21.60625rem]'>
               <div className='flex items-center justify-between'>
-                <h1 className='text-[#232360] font-bold text-xl'>Visitors</h1>
+                <h1 className='text-[#232360] font-bold text-sm md:text-xl'>Visitors</h1>
                 <div>
                   <div>
-                    <p>1,253 
+                    <p className='text-sm md:text-base'>1,253 
                       <span className='text-[#615E83] text-sm ml-1'>users</span>
                     </p>
                   </div>
@@ -148,15 +148,15 @@ const Home = () => {
                   <SemiPieChart />
                 </div>
             </div>
-            <div className='chart border border-white p-5 mb-5 shadow-md rounded-lg h-[261.07px] w-[319.99px]'>
+            <div className='chart mx-auto border border-white p-7 mb-5 shadow-md rounded-lg h-[13.75rem] md:h-[261.07px] w-[319.99px]'>
               <div className='flex items-center justify-between'>
-                <h1 className='text-[#1E1B39] text-xl  font-bold'>Match</h1>
-                <p className='text-[#1E1B39] text-[18.91px] font-bold'>229,293</p>
+                <h1 className='text-[#1E1B39] text-sm md:text-xl  font-bold'>Match</h1>
+                <p className='text-[#1E1B39] text-sm md:text-[18.91px] font-bold'>229,293</p>
               </div>
                 <PieChart />
             </div>
-            <div className='active bg-white p-6 shadow-md rounded-md ml-[-12rem] h-[261.07px] w-[47.3125rem] mb-5'>
-                <h1 className='text-[#232360] font-bold text-xl'>Demographics</h1>
+            <div className='active mx-auto bg-white p-6 shadow-md rounded-md mt-3 md:mt-0 lg:ml-[-12rem] h-[261.07px] w-[20rem] md:w-[47.3125rem] mb-5'>
+                <h1 className='text-[#232360] font-bold text-sm md:text-xl'>Demographics</h1>
                 <div className='flex flex-col float-right space-y-4 mt-4'>
                     <div className='flex items-center space-x-5'>
                       <div className='flex items-center space-x-4'>
@@ -216,7 +216,7 @@ const Home = () => {
                       </div>
                     </div>
                     <div className='py-6 flex flex-col'>
-                      <h2 className='text-[#020202] font-bold text-[sm] '>Total Countries: 
+                      <h2 className='text-[#020202] font-bold text-sm md:text-base '>Total Countries: 
                         <span className='text-[#9E9E9E] ml-2'>7</span>
                       </h2>
                     </div>

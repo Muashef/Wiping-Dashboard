@@ -20,11 +20,11 @@ const UserAnalytics = () => (
     <div className='w-full h-screen grid grid-cols-1 lg:grid-cols-[13rem_1fr] items-stretch'>
         <Sidebar />
         <div className='users grid grid-cols-1 lg:grid-cols-2 items-center justify-center px-10 mx-auto mt-10'>
-            <div className='gender border border-[#FAFAFA] p-5 rounded-lg shadow-md w-[40.798125rem]'>
+            <div className='gender border border-[#FAFAFA] mx-auto p-5 rounded-lg shadow-md w-[21rem] md:w-[40.798125rem]'>
                 <div className='flex items-center justify-between'>
                     <div className='flex items-center'>
                         <div className='mr-6'>
-                            <h3 className='text-[#1E1B39] text-xl font-bold'>Age and Gender</h3>
+                            <h3 className='text-[#1E1B39] text-sm md:text-xl whitespace-nowrap font-bold'>Age and Gender</h3>
                         </div>
                         <div className='flex items-center'>
                             <span className='flex items-center mr-3'>
@@ -85,14 +85,14 @@ const UserAnalytics = () => (
                 <div className='flex items-center justify-between'>
                     <p className='whitespace-nowrap mr-4 text[11.28px] text-center'>65+</p>
                     <div class="h-4 w-full bg-[#F8F8FF] rounded-sm">
-                        <div class="h-4 bg-[#2F80ED] w-72 rounded-md" >
+                        <div class="h-4 bg-[#2F80ED] w-48 md:w-72 rounded-md" >
                             <div class="h-4 bg-[#1EA7FF] w-40 rounded-md" ></div>
                         </div>
                     </div>
                     <p className='ml-3 text-[11.28px]'>33.5%</p>
                 </div>  
             </div>
-            <div className='total bg-white p-6 shadow-md rounded-md ml-40 w-[21.60625rem] mb-5'>
+            <div className='total bg-white p-6 shadow-md mx-auto mt-10 lg:mt-0 rounded-md lg:ml-40 w-[21rem] md:w-[21.60625rem] mb-5'>
                 <h1 className='text-[#232360] font-bold text-xl'>Total Users</h1>
                 <div className='border-b-2 w-40 h-2'></div>
                 <div className='flex items-center justify-between mt-10'>
@@ -105,7 +105,7 @@ const UserAnalytics = () => (
                 </div>
                 
             </div>
-            <div className='female bg-[#1EA7FF] p-6 shadow-md rounded-md w-[40.798125rem] h-[11.7225rem]'>
+            <div className='female bg-[#1EA7FF] p-6 shadow-md mx-auto rounded-md w-[21rem] lg:w-[40.798125rem] h-[11.7225rem]'>
                 <h1 className='text-white font-bold text-[1.20rem]'>Female Users</h1>
                 <div className='border-b-2 w-40 h-2'></div>
                 <div className='flex items-center justify-between mt-4'>
@@ -118,7 +118,7 @@ const UserAnalytics = () => (
                 </div>
                 
             </div>
-            <div className='active bg-white p-6 shadow-md rounded-md ml-40 w-[21.60625rem] mb-5'>
+            <div className='active bg-white p-6 shadow-md mx-auto mt-10 lg:mt-0 rounded-md lg:ml-40 w-[21rem] md:w-[21.60625rem] mb-5'>
                 <h1 className='text-[#232360] font-bold text-xl'>Active Users</h1>
                 <div className='border-b-2 w-40 h-2'></div>
                 <div className='flex items-center justify-between mt-10'>
@@ -131,7 +131,7 @@ const UserAnalytics = () => (
                 </div>
                 
             </div>
-            <div className='male bg-[#2F80ED] p-6 shadow-md rounded-md w-[40.798125rem] h-[11.7225rem] mb-4'>
+            <div className='male bg-[#2F80ED] p-6 shadow-md mx-auto rounded-md w-[21rem] md:w-[40.798125rem] h-[11.7225rem] mb-4'>
                 <h1 className='text-white font-bold text-[1.20rem]'>Male Users</h1>
                 <div className='border-b-2 w-40 h-2'></div>
                 <div className='flex items-center justify-between mt-4'>
@@ -144,20 +144,7 @@ const UserAnalytics = () => (
                 </div>
                 
             </div>
-            {/* <div className='reject bg-white p-6 shadow-md rounded-md w-[21.60625rem]'>
-                <h1 className='text-[#232360] font-bold text-xl'>Rejected</h1>
-                <div className='border-b-2 w-32 h-2'></div>
-                <div className='flex items-center justify-between mt-10'>
-                    <div>
-                    <p className='text-[#2F80ED] font-bold'>4,000</p>
-                    </div>
-                    <div>
-                        <img src={ Profile } alt="profile" />
-                    </div>
-                </div>
-                
-            </div> */}
-            <div className='inactive bg-white p-6 shadow-md rounded-md ml-40 w-[21.60625rem]'>
+            <div className='inactive bg-white p-6 shadow-md mx-auto rounded-md lg:ml-40 w-[21rem] md:w-[21.60625rem]'>
                 <h1 className='text-[#232360] text-xl font-bold '>Inactive Users</h1>
                 <div className='border-b-2 w-40 h-2'></div>
                 <div className='flex items-center justify-between mt-8'>
@@ -170,7 +157,7 @@ const UserAnalytics = () => (
                 </div>
                 
             </div>
-            <div className='ages bg-white p-6 shadow-md rounded-md w-[21.60625rem]'>
+            <div className='ages bg-white p-6 shadow-md mt-5 lg:mt-0 mx-auto rounded-md w-[21rem] md:w-[21.60625rem]'>
                 <h1 className='text-[#232360] text-xl font-bold '>Ages</h1>
                 <div className='border-b-2 w-24 h-2'></div>
                 <div className='flex items-center justify-between mt-8'>

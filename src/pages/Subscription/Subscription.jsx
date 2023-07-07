@@ -15,7 +15,7 @@ const Subscription = () => (
     
     <div className='w-full min-h-screen lg:overflow-hidden grid grid-cols-1 lg:grid-cols-[14rem_1fr] items-stretch'>
         <Sidebar />
-        <div className='w-[705px] mx-auto h-screen my-10'>
+        <div className='w-max-content md:w-[44.0625rem] mx-auto h-screen my-10'>
             <div className='border border-white p-5 shadow-md rounded-lg'>
                 <BarChart />
             </div>

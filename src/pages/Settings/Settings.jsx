@@ -3,6 +3,8 @@ import NavBar from '../../components/Header/Navbar';
 import Sidebar from '../../components/Sidebar/Sidebar';
 import SettingsData from '../../components/Table/SettingsData';
 import InviteModal from '../../components/Modal/InviteModal';
+import RevokeInvite from '../../components/Modal/RevokeInvite';
+import ResendInvite from '../../components/Modal/ResendInvite';
 
 
 const Settings = () => (
@@ -29,27 +31,27 @@ const Settings = () => (
                         <div>
                             <h3 className='text-[#757575] text-base font-bold'>Davidadeleke007@gmail.com</h3>
                         </div>
-                        <div>
-                            <button  className='bg-[#828282] rounded-md mr-5 py-2 px-3 text-white'>Resend Invite</button>
-                            <button className='bg-[#EB5757] rounded-md py-2 px-3 text-white'>Revoke Invite</button>
+                        <div className='flex items-center gap-1 ml-12'>
+                            <ResendInvite />
+                            <RevokeInvite />
                         </div>
                     </div>
                     <div className='flex items-center justify-between mt-6'>
                         <div>
                             <h3 className='text-[#757575] text-base font-bold'>Davidadeleke007@gmail.com</h3>
                         </div>
-                        <div>
-                            <button className='bg-[#828282] rounded-md mr-5 py-2 px-3 text-white'>Resend Invite</button>
-                            <button className='bg-[#EB5757] rounded-md py-2 px-3 text-white'>Revoke Invite</button>
+                        <div className='flex items-center gap-1 ml-12'>
+                            <ResendInvite />
+                            <RevokeInvite />
                         </div>
                     </div>
                     <div className='flex items-center justify-between mt-6'>
                         <div>
                             <h3 className='text-[#757575] text-base font-bold'>Davidadeleke007@gmail.com</h3>
                         </div>
-                        <div>
-                            <button className='bg-[#828282] rounded-md mr-5 py-2 px-3 text-white'>Resend Invite</button>
-                            <button className='bg-[#EB5757] rounded-md py-2 px-3 text-white'>Revoke Invite</button>
+                        <div className='flex items-center gap-1 ml-12'>
+                            <ResendInvite />
+                            <RevokeInvite />
                         </div>
                     </div>
                 </div>

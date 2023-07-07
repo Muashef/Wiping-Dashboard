@@ -3,6 +3,7 @@ import mode from '../../assets/svg/mode.svg';
 import darkMode from '../../assets/svg/darkMode.svg';
 import navLogo from "../../assets/svg/nav-logo.svg";
 import './dark.css';
+import SidebarNav from '../Sidebar/SidebarNav';
 
 const NavBar = ({title, showMode}) => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -23,12 +24,15 @@ const NavBar = ({title, showMode}) => {
 
   return (
     <div className='flex items-center justify-between'>
+      <div>
+        <SidebarNav />
+      </div>
       <div className='w-full flex items-center space-x-10 px-8 py-5'>
-        <div>
+        <div className='w-32 lg:w-full'>
             <img src={navLogo} alt="" />
         </div>
         <div>
-            <h2 className='text-[#2F80ED] text-xl font-bold'>{title}</h2>
+            <h2 className='text-[#2F80ED] text-sm md:text-xl whitespace-nowrap font-bold'>{title}</h2>
         </div>
       </div>
       <div>

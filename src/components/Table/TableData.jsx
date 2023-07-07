@@ -134,7 +134,7 @@ const TableData = () => {
         Cell: ({ value }) => (
           <span
             className={`${
-              value === 'Wiping Free' ? 'text-[#757575] font-bold text-base' : 'text-[#2F80ED] font-bold text-base'
+              value === 'Wiping Free' ? 'text-[#757575] font-bold text-base' : 'text-[#2F80ED] font-bold text-base whitespace-nowrap'
             }`}
           >
             {value}
@@ -182,7 +182,7 @@ const TableData = () => {
             <tr {...headerGroup.getHeaderGroupProps()}>
               {headerGroup.headers.map((column) => (
                 <th
-                className="py-4 px-4 border-b border-[#BDBDBD] cursor-pointer text-[#BDBDBD] text-base text-left"
+                className="py-4 px-4 border-b border-[#BDBDBD] cursor-pointer text-[#BDBDBD] text-base text-left whitespace-nowrap"
                   {...column.getHeaderProps()}
                   key={column.id}
                 >

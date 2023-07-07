@@ -54,15 +54,15 @@ const IncomeChart = () => {
     <div className="relative">
         <div className='flex items-center justify-between mb-3'>
             <div className='flex items-center space-x-2'>
-                <h3 className='text-[#232360] text-2xl font-bold'>Income</h3>
+                <h3 className='text-[#232360] text-base md:text-2xl font-bold'>Income</h3>
                 <div className='flex items-center space-x-2'>
-                    <p>#223,890</p>
-                    <p>$23,890</p>
+                    <p className='text-sm md:text-base'>#223,890</p>
+                    <p className='text-sm md:text-base'>$23,890</p>
                 </div>
             </div>
             <div className="absolute top-2 right-2">
                 <button
-                className={`text-[#232360] text-lg ${
+                className={`text-[#232360] text-sm md:text-lg ${
                     timePeriod === 'weekly' ? 'border-b-2 border-b-[#2F80ED] text-[#232360] text-lg' : ''
                 }`}
                 onClick={() => handleTimePeriodChange('weekly')}
@@ -70,7 +70,7 @@ const IncomeChart = () => {
                 Weekly
                 </button>
                 <button
-                className={` text-[#232360] text-lg ml-4 ${
+                className={` text-[#232360] text-sm md:text-lg ml-4 ${
                     timePeriod === 'monthly' ? 'border-b-2 border-b-[#2F80ED] text-[#232360] text-lg' : ''
                 }`}
                 onClick={() => handleTimePeriodChange('monthly')}
@@ -78,7 +78,7 @@ const IncomeChart = () => {
                 Monthly
                 </button>
                 <button
-                className={`text-[#232360] text-lg ml-4 ${
+                className={`text-[#232360] text-sm md:text-lg ml-4 ${
                     timePeriod === 'quarterly' ? 'border-b-2 border-b-[#2F80ED] text-[#232360] text-lg' : ''
                 }`}
                 onClick={() => handleTimePeriodChange('quarterly')}

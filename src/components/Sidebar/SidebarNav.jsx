@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import { useRef, useState } from "react";
+import { IoClose, IoMenu } from "react-icons/io5";
 import Home from '../../assets/svg/home.svg';
 import Matches from '../../assets/svg/matches.svg';
 import Mgt from '../../assets/svg/mgt.svg';
@@ -11,26 +12,51 @@ import user from '../../assets/svg/user.svg';
 import logout from '../../assets/svg/logout.svg';
 import LogoutModal from '../Modal/LogoutModal';
 
-const Sidebar = () => {
+const SidebarNav = () => {
+    const [menuIsOpen, setMenuIsOpen] = useState(false)
     const [isLoggedIn, setIsLoggedIn] = useState(true);
     const [isModalOpen, setIsModalOpen] = useState(false);
     const location = useLocation();
-  
+
     const handleLogout = () => {
-      setIsLoggedIn(false);
-      setIsModalOpen(false);
-    };
+        setIsLoggedIn(false);
+        setIsModalOpen(false);
+      };
+  
+    const menuRef = useRef(null)
 
-  return (
-    <div className='w-full lg:w-[72] lg:h-screen grid lg:grid-cols-[272px_1fr] gap-0 text-white'>
-        <aside className="lg:w-[12.625rem] h-[60.25rem]  bg-blue text-white py-[2.375rem] px-3 hidden lg:flex flex-col items-center gap-8 justify-between rounded-tr-md">
-            <div className="aside-top w-[135px]">
-                    <div className=' text-white'>
-                        <h2 className='font-bold text-lg'>Jane Doe</h2>
-                        <p className='text-sm'>Product manager</p>
-                    </div>
+    const handleClickOutsideMenu = (e) => {
+        if (!menuRef.current.contains(e.target)) {
+            setMenuIsOpen(false)
+        }
+    }
 
-                    <nav className="mt-16 ">
+    const handleOpenMenu = () => setMenuIsOpen(true)
+    const handleCloseMenu = () => setMenuIsOpen(false)
+    return (
+        <header className="w-full flex lg:hidden relative">
+            <section className="w-full py-3 flex justify-end px-5">
+                <button onClick={ handleOpenMenu } className="text-[#2E3A59]">
+                    <IoMenu className="text-[#2E3A59] text-4xl" />
+                </button>
+            </section>
+            <section onClick={ handleClickOutsideMenu } className={`w-56 h-screen bg-blue fixed top-0 left-0 transition-all duration-300 z-[100]
+                ${menuIsOpen ? "translate-x-0" : "translate-x-[-101vw]"}`}
+            >
+                <section ref={ menuRef } className="w-[300px] h-screen bg-purple text-white py-[1.375rem] px-8 flex flex-col gap-8 justify-between">
+                    <div className="aside-top w-full">
+                        <div className="float-right">
+                            <div className=" flex items-center justify-center gap-2 w-[88px]">
+                                {/* <img src={ Logo } alt="" className="w-full" /> */}
+                            </div>
+                            <div className="w-[20px]">
+                                <button onClick={ handleCloseMenu } className="bg-purple">
+                                    <IoClose className="text-white text-2xl" />
+                                </button>
+                            </div>
+                        </div>
+                        
+                       <nav className="mt-16 ">
                         <ul className="w-full flex flex-col gap-8">
                         <li>
                             <Link to="/home" className="w-fit flex items-center gap-2 bg-transparent">
@@ -94,10 +120,10 @@ const Sidebar = () => {
                             </li>
                         </ul>
                     </nav>
-            </div>
-        </aside>
-    </div>
-  ) 
+                    </div>
+                </section>
+            </section>    
+        </header>
+    )
 }
-
-export default Sidebar
+export default SidebarNav
