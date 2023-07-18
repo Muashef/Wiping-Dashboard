@@ -148,7 +148,7 @@ const Home = () => {
                   <SemiPieChart />
                 </div>
             </div>
-            <div className='chart mx-auto border border-white p-7 mb-5 shadow-md rounded-lg h-[13.75rem] md:h-[261.07px] w-[319.99px]'>
+            <div className='chart border border-white p-7 mb-5 shadow-md rounded-lg h-[7.75rem] md:h-[261.07px] w-[319.99px]'>
               <div className='flex items-center justify-between'>
                 <h1 className='text-[#1E1B39] text-sm md:text-xl  font-bold'>Match</h1>
                 <p className='text-[#1E1B39] text-sm md:text-[18.91px] font-bold'>229,293</p>

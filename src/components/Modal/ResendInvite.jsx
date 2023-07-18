@@ -48,7 +48,7 @@ const ResendInvite = () => {
       {isOpen && (
         <div className="fixed inset-0 flex items-center justify-center z-10">
           <div className="bg-gray-800 bg-opacity-75 absolute inset-0"></div>
-          <div className="bg-[#F4F4F4] rounded-lg p-8 z-20 w-[35rem]">
+          <div className="bg-[#F4F4F4] rounded-lg p-8 z-20 w-[28rem] md:w-[35rem]">
             <div className="mb-5">
               <label htmlFor="email" className="block mb-1 font-medium text-2xl">
                 Email Address
