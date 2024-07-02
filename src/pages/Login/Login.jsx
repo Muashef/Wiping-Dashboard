@@ -17,8 +17,8 @@ function Login() {
       <img className="mx-auto h-12 w-auto" src={Logo} alt="Wiping-logo" />
       <p className="mt-10 text-center text-3xl tracking-tight text-[#212121] font-inter dark:text-[#BDBDBD]">Sign In</p>
     </div>
-    <form className="mt-10 space-y-6 relative" action="#" method="POST">
-      <input type="hidden" name="remember" value="true" /> 
+    <form className="mt-10 space-y-6 relative">
+      <input type="hidden" name="remember" value="true" required /> 
       <div className="-space-y-px rounded-md shadow-sm">
         <div className='mb-6'>
           <label for="email-address" className="sr-only">Email address</label>
@@ -45,7 +45,6 @@ function Login() {
             <div className="flex items-center">
             <label for="remember-me" class="mr-1 block text-sm text-gray-900">Don't have an account</label>
             </div>
-
             <div className="text-sm">
             <a href="#" class="font-medium text-[#2F80ED] hover:text-indigo-500">Sign up</a>
             </div>

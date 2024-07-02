@@ -6,10 +6,8 @@ import InviteModal from '../../components/Modal/InviteModal';
 import RevokeInvite from '../../components/Modal/RevokeInvite';
 import ResendInvite from '../../components/Modal/ResendInvite';
 
-
 const Settings = () => (
     
-
   <div className="">
     <div className=''>
         <NavBar title="Settings" showMode={true} />
@@ -23,7 +21,6 @@ const Settings = () => (
             <div className='w-[55.5rem] mx-auto border mt-3 border-[#FAFAFA] p-3 rounded-lg shadow-md'>
                 <SettingsData />
             </div>   
-
             <div className='mt-8'>
                 <h3 className='text-[#BDBDBD] text-base font-bold'>Pending Invites</h3>
                 <div className='w-[38rem] border mt-3 border-[#FAFAFA] p-3 rounded-lg shadow-md'>
@@ -60,4 +57,5 @@ const Settings = () => (
     </div>
   </div>
 );
+
 export default Settings;
